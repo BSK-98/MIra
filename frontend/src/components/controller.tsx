@@ -60,7 +60,7 @@ const Controller = () => {
                                 {audio.sender}
                             </p>
                             {/* audio message */}
-                            <audio src={audio.blobUrl} className="appearance-none" controls />
+                            <audio src={audio.blobUrl} className="appearance-none" controls autoPlay />
                         </div>
                     </div>
                 })}
