@@ -25,7 +25,7 @@ const Controller = () => {
             const formData = new FormData ()
             formData.append("file", blob, "myfile.wav")
 
-            await axios.post ("http://localhost:8000/post-audio", formData, {
+            await axios.post ("https://mira-owtz.onrender.com/post-audio", formData, {
                 headers: {
                     "Content-Type": "audio/mpeg"
                 },

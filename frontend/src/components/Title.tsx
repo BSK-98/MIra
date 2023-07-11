@@ -10,7 +10,7 @@ const Title = ({ setMessages}: props) => {
     const resetConversion = async () => {
         setIsResetting (true)
 
-        await axios.get ("http://localhost:8000/reset-chats").then ((res) => {
+        await axios.get ("https://mira-owtz.onrender.com/reset-chats").then ((res) => {
             if (res.status == 200) {
                 alert (res.data)
                 setMessages ([])
